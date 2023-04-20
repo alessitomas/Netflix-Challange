@@ -131,6 +131,14 @@ Sendo assim um consideramos um erro de 2 estrelas no ranking, possível de ir pa
 
 **3.** Execute as células do arquivo jupyter notebook **demo.ipynb**<br>
 
+<br>
+
+# Autores
+
+* [Tomás Alessi](https://github.com/alessitomas)
+* [Leonardo Scarlato](https://github.com/leoscarlato)
+
+
 
 
 
