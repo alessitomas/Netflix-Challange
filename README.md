@@ -108,3 +108,11 @@ Para gerar os histogramas abaixo, alteramos o número de elementos que foram mod
 
 #### 300 elementos modificados
 ![alt text](graficos/300_previsoes.png)
+
+## Conclusão 
+
+Se baseando nos histogramas acreditamos que o sistema poderia ser colocado em produção. Uma vez que consideramos até 2.5 como um erro aceitável, dado que a avaliação vária no intervalo 0-5.
+
+Nos três últimos gráficos, onde repetimos o processo 200 vezes e os ruídos na matriz foram respectivamente 100, 200 e 300. Percebemos pela distribuição dos erros que a maior frequência ocorreu entre valores de 1.4 - 2.1
+
+Sendo assim um consideramos um erro de 2 estrelas no ranking, possível de ir para produção, mas com espaço para melhoras na performance.
