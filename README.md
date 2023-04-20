@@ -83,12 +83,28 @@ A partir da new_Matriz podemos acessar um valor, e comparar a diferença dele co
 
 Executando o processo diversas vezes é possível gerar um histograma dos erros cometidos. O que permite avaliar a eficiência do SVD em prever os valores "reais" na Matriz Original. Quanto menor o erro médio, melhor a técnica de SVD é para prever as notas que um usuário daria a um filme que ele ainda não assistiu
 
+<br>
+
+## Resultados encontrados
+
+### Histograma de erros
+
+Este histograma mostra a distribuição dos erros após 400 iterações. O eixo x representa o erro cometido (módulo da diferença do valor original para o novo valor) e o eixo y representa a frequência de cada erro.
+
+![alt text](graficos/resultado.png)
 
 
+### Testes de stress
 
+Para gerar os histogramas abaixo, alteramos o número de elementos que foram modificados na matriz original, e assim geramos novos histogramas de erros.
 
+<br>
 
+#### 100 elementos modificados
+![alt text](graficos/100_previsoes.png)
 
+#### 200 elementos modificados
+![alt text](graficos/200_previsoes.png)
 
-
-
+#### 300 elementos modificados
+![alt text](graficos/300_previsoes.png)
