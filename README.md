@@ -116,3 +116,22 @@ Após a análise dos histogramas gerados, acreditamos que o sistema poderia ser 
 Nos três últimos gráficos, onde foram realizadas 200 iterações em cada um e os ruídos na matriz são iguais à 100, 200 e 300, respectivamente, percebemos pela distribuição dos erros que a maior frequência ocorreu entre valores de 1.4 até 2.1.
 
 Sendo assim um consideramos um erro de 2 estrelas no ranking, possível de ir para produção, mas com espaço para melhoras na performance.
+
+<br>
+
+# Como executar o projeto
+
+**1.** Clone o repositório para sua máquina local<br>
+
+```git clone https://github.com/alessitomas/Netflix-Challange.git```<br>
+
+**2.** Instale as dependências do projeto<br>
+
+```pip install -r requirements.txt```<br>
+
+**3.** Execute as células do arquivo jupyter notebook **demo.ipynb**<br>
+
+
+
+
+
