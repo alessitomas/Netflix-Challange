@@ -36,9 +36,9 @@ $$
 
 <br>
 
-O primeiro passo é escolher aleatoriamente um dos elementos da matriz $B$, (desde que esse elemneto seja de fato um valor, não podendo ser nan)
+O primeiro passo é escolher aleatoriamente um dos elementos da matriz $B$, (desde que esse elemento seja de fato um valor, não podendo ser nan)
 
-Atribuir a ele um valor aleatório, gerando a matriz $B$. O que simula o caso em que um usuário ainda não assistiu a um filme e, sendo assim não atribuiu uma nota a ele, sendo assim nós estamos inserindo ruído na matriz orignal.
+Atribuir a ele um valor aleatório, gerando a matriz $B$. O que simula o caso em que um usuário ainda não assistiu a um filme e, sendo assim não atribuiu uma nota a ele, com isso nós estamos inserindo ruído na matriz orignal.
 
 <br>
 
@@ -73,7 +73,7 @@ onde:
 
 <br>
 
-**Matriz Sigma**: Os valores singulares são números não negativos encontrados na diagonal principal da matriz Σ e representam a importância relativa das colunas e linhas da matriz original.
+**Matriz Sigma**: Os valores singulares são números da diagonal principal da matriz Σ que representam a importância relativa das colunas e linhas da matriz original.
 
 Com a inserção de ruído os valores singulares menores são os mais afetados, e por isso iremos buscar reduzir essa diferança para que assim possamos voltar o mais próximo da matriz original, partindo de uma matriz com ruído (no nosso caso de um ponto onde não temos rating).
 
