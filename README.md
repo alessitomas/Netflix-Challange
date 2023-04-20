@@ -36,9 +36,9 @@ $$
 
 <br>
 
-O primeiro passo é escolher aleatoriamente um dos elementos da matriz $B$, (desde que esse elemneto seja de fato um valor, não podendo ser nan)
+O primeiro passo é escolher aleatoriamente um dos elementos da matriz $B$, (desde que esse elemento seja de fato um valor, não podendo ser nan)
 
-Atribuir a ele um valor aleatório, gerando a matriz $B$. O que simula o caso em que um usuário ainda não assistiu a um filme e, sendo assim não atribuiu uma nota a ele, sendo assim nós estamos inserindo ruído na matriz orignal.
+Atribuir a ele um valor aleatório, gerando a matriz $B$. O que simula o caso em que um usuário ainda não assistiu a um filme e, sendo assim não atribuiu uma nota a ele, com isso nós estamos inserindo ruído na matriz orignal.
 
 <br>
 
@@ -73,11 +73,11 @@ onde:
 
 <br>
 
-**Matriz Sigma**: os auto valores são números não negativos encontrados na diagonal principal da matriz Σ e representam a importância relativa das colunas e linhas da matriz original.
+**Matriz Sigma**: Os valores singulares são números da diagonal principal da matriz Σ que representam a importância relativa das colunas e linhas da matriz original.
 
-Com a inserção de ruído os auto valores menores são os mais afetados, e por isso iremos buscar reduzir essa diferança para que assim possamos voltar o mais próximo da matriz original, partindo de uma matriz com ruído (no nosso caso de um ponto onde não temos rating).
+Com a inserção de ruído os valores singulares menores são os mais afetados, e por isso iremos buscar reduzir essa diferança para que assim possamos voltar o mais próximo da matriz original, partindo de uma matriz com ruído (no nosso caso de um ponto onde não temos rating).
 
-Para realizar a redução de dimensionalidade, a decomposição SVD é aplicada na matriz original, e os auto valores maior são selecionados e os demais são descartados. As colunas correspondentes aos valores singulares maiores são selecionadas e formam uma matriz menor new_Matriz, que é uma aproximação da Matriz Original, partindo de uma matriz com ruído B .
+Para realizar a redução de dimensionalidade, a decomposição SVD é aplicada na matriz original, e os valores singulares maiores são selecionados ao passo que os menores são descartados. As colunas correspondentes aos valores singulares maiores são selecionadas e formam uma matriz menor new_Matriz, que é uma aproximação da Matriz Original com menos ruído, partindo de uma matriz com ruído B.
 
 A partir da new_Matriz podemos acessar um valor, e comparar a diferença dele com o valor real na Matriz Original.
 
